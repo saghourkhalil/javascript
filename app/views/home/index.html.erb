@@ -33,25 +33,21 @@
   </ul>
 </div>
 
-<div class="back">
- <
-</div>
 <div class="container">
-<div id="galerie">
-
-
-    <div class="row">
-      <% @tasks.each do |task|  %>
-        <div class="card col-3">
-          <% unless task.image.nil? %>
-            <%= image_tag task.image, class: "rounded-circle" %>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
+  <div class="row">
+    <% @tasks.each do |task|  %>
+      <div class="card col-3">
+        <% unless task.image.nil? %>
+        <div>
+          <%= image_tag task.image, class: "rounded-circle" %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
 </div>
 
-<div class="next">
-  >
-</div>
+
+
+
+
